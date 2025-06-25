@@ -1,0 +1,350 @@
+{
+  "messageInformation" : {
+    "messageId" : {
+      "value" : "CDM-Pipeline-Message-1750819850063"
+    }
+  },
+  "timestamp" : [ {
+    "dateTime" : "2025-06-25T02:50:50.0634412Z",
+    "qualification" : "eventCreationDateTime"
+  } ],
+  "eventIdentifier" : [ {
+    "assignedIdentifier" : [ {
+      "identifier" : {
+        "value" : "CDM-Workflow-1750819850063"
+      }
+    } ]
+  } ],
+  "action" : "New",
+  "businessEvent" : {
+    "intent" : "ContractFormation",
+    "eventDate" : "2025-04-17",
+    "instruction" : [ {
+      "primitiveInstruction" : {
+        "contractFormation" : {
+          "legalAgreement" : [ {
+            "agreementDate" : "2025-04-17",
+            "legalAgreementIdentification" : {
+              "agreementName" : {
+                "agreementType" : "Confirmation"
+              },
+              "publisher" : "ISDA"
+            },
+            "contractualParty" : [ {
+              "value" : {
+                "partyId" : [ {
+                  "identifier" : {
+                    "value" : "B4TYDEB6GKMZO031MB27"
+                  }
+                } ],
+                "name" : {
+                  "value" : "Bank Of America, National Association - Australian Branch"
+                }
+              }
+            }, {
+              "value" : {
+                "partyId" : [ {
+                  "identifier" : {
+                    "value" : "F8SB4JFBSYQFRQEH3Z21"
+                  }
+                } ],
+                "name" : {
+                  "value" : "National Australia Bank Limited"
+                }
+              }
+            } ]
+          } ]
+        }
+      }
+    } ],
+    "eventQualifier" : "ContractFormation",
+    "after" : [ {
+      "trade" : {
+        "tradableProduct" : {
+          "product" : {
+            "taxonomy" : [ {
+              "source" : "ISDA",
+              "primaryAssetClass" : {
+                "value" : "InterestRate"
+              },
+              "productQualifier" : "InterestRate_IRSwap_FixedFloat"
+            }, {
+              "source" : "CFI",
+              "primaryAssetClass" : {
+                "value" : "InterestRate"
+              },
+              "productQualifier" : "IRSTXD"
+            } ],
+            "economicTerms" : {
+              "payout" : [ {
+                "InterestRatePayout" : {
+                  "payerReceiver" : {
+                    "payer" : "Party1",
+                    "receiver" : "Party2"
+                  },
+                  "priceQuantity" : {
+                    "quantitySchedule" : {
+                      "value" : {
+                        "value" : 50000000,
+                        "unit" : {
+                          "currency" : {
+                            "value" : "USD"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "rateSpecification" : {
+                    "fixedRateSpecification" : {
+                      "rateSchedule" : {
+                        "price" : {
+                          "value" : {
+                            "value" : 0.12,
+                            "unit" : {
+                              "capacityUnit" : null,
+                              "weatherUnit" : null,
+                              "financialUnit" : null,
+                              "currency" : {
+                                "value" : "USD",
+                                "meta" : null,
+                                "type" : "com.rosetta.model.metafields.FieldWithMetaString",
+                                "valueType" : "java.lang.String"
+                              },
+                              "type" : "cdm.base.math.UnitType"
+                            },
+                            "datedValue" : null,
+                            "perUnitOf" : {
+                              "capacityUnit" : null,
+                              "weatherUnit" : null,
+                              "financialUnit" : null,
+                              "currency" : {
+                                "value" : "USD",
+                                "meta" : null,
+                                "type" : "com.rosetta.model.metafields.FieldWithMetaString",
+                                "valueType" : "java.lang.String"
+                              },
+                              "type" : "cdm.base.math.UnitType"
+                            },
+                            "priceType" : "INTEREST_RATE",
+                            "priceExpression" : null,
+                            "composite" : null,
+                            "arithmeticOperator" : null,
+                            "cashPrice" : null,
+                            "type" : "cdm.observable.asset.PriceSchedule"
+                          },
+                          "globalReference" : null,
+                          "externalReference" : null,
+                          "reference" : null,
+                          "type" : "cdm.observable.asset.metafields.ReferenceWithMetaPriceSchedule",
+                          "valueType" : "cdm.observable.asset.PriceSchedule"
+                        },
+                        "type" : "cdm.product.common.schedule.RateSchedule"
+                      },
+                      "meta" : null,
+                      "type" : "cdm.product.asset.FixedRateSpecification"
+                    },
+                    "floatingRateSpecification" : null,
+                    "inflationRateSpecification" : null,
+                    "type" : "cdm.product.asset.RateSpecification"
+                  },
+                  "dayCountFraction" : {
+                    "value" : "ACT/360"
+                  },
+                  "calculationPeriodDates" : {
+                    "effectiveDate" : {
+                      "adjustableDate" : {
+                        "unadjustedDate" : "2025-04-17",
+                        "dateAdjustments" : {
+                          "businessDayConvention" : "NONE"
+                        }
+                      }
+                    },
+                    "terminationDate" : {
+                      "adjustableDate" : {
+                        "unadjustedDate" : "2026-01-22",
+                        "dateAdjustments" : {
+                          "businessDayConvention" : "MODFOLLOWING"
+                        }
+                      }
+                    }
+                  }
+                }
+              }, {
+                "InterestRatePayout" : {
+                  "payerReceiver" : {
+                    "payer" : "Party2",
+                    "receiver" : "Party1"
+                  },
+                  "priceQuantity" : {
+                    "quantitySchedule" : {
+                      "value" : {
+                        "value" : 50000000,
+                        "unit" : {
+                          "currency" : {
+                            "value" : "USD"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "rateSpecification" : {
+                    "fixedRateSpecification" : null,
+                    "floatingRateSpecification" : {
+                      "rateOption" : {
+                        "value" : {
+                          "floatingRateIndex" : {
+                            "identifier" : null,
+                            "taxonomy" : null,
+                            "isExchangeListed" : null,
+                            "exchange" : null,
+                            "relatedExchange" : null,
+                            "name" : null,
+                            "provider" : null,
+                            "assetClass" : null,
+                            "floatingRateIndex" : {
+                              "value" : "USD_SOFR_COMPOUND",
+                              "meta" : null,
+                              "type" : "cdm.base.staticdata.asset.rates.metafields.FieldWithMetaFloatingRateIndexEnum",
+                              "valueType" : "cdm.base.staticdata.asset.rates.FloatingRateIndexEnum"
+                            },
+                            "indexTenor" : null,
+                            "type" : "cdm.observable.asset.FloatingRateIndex"
+                          },
+                          "inflationIndex" : null,
+                          "type" : "cdm.observable.asset.InterestRateIndex"
+                        },
+                        "globalReference" : null,
+                        "externalReference" : null,
+                        "reference" : null,
+                        "type" : "cdm.observable.asset.metafields.ReferenceWithMetaInterestRateIndex",
+                        "valueType" : "cdm.observable.asset.InterestRateIndex"
+                      },
+                      "spreadSchedule" : {
+                        "price" : {
+                          "value" : {
+                            "value" : 0.024,
+                            "unit" : {
+                              "capacityUnit" : null,
+                              "weatherUnit" : null,
+                              "financialUnit" : null,
+                              "currency" : {
+                                "value" : "USD",
+                                "meta" : null,
+                                "type" : "com.rosetta.model.metafields.FieldWithMetaString",
+                                "valueType" : "java.lang.String"
+                              },
+                              "type" : "cdm.base.math.UnitType"
+                            },
+                            "datedValue" : null,
+                            "perUnitOf" : {
+                              "capacityUnit" : null,
+                              "weatherUnit" : null,
+                              "financialUnit" : null,
+                              "currency" : {
+                                "value" : "USD",
+                                "meta" : null,
+                                "type" : "com.rosetta.model.metafields.FieldWithMetaString",
+                                "valueType" : "java.lang.String"
+                              },
+                              "type" : "cdm.base.math.UnitType"
+                            },
+                            "priceType" : "INTEREST_RATE",
+                            "priceExpression" : null,
+                            "composite" : null,
+                            "arithmeticOperator" : null,
+                            "cashPrice" : null,
+                            "type" : "cdm.observable.asset.PriceSchedule"
+                          },
+                          "globalReference" : null,
+                          "externalReference" : null,
+                          "reference" : null,
+                          "type" : "cdm.observable.asset.metafields.ReferenceWithMetaPriceSchedule",
+                          "valueType" : "cdm.observable.asset.PriceSchedule"
+                        },
+                        "spreadScheduleType" : null,
+                        "type" : "cdm.product.asset.SpreadSchedule"
+                      },
+                      "capRateSchedule" : null,
+                      "floorRateSchedule" : null,
+                      "meta" : null,
+                      "floatingRateMultiplierSchedule" : null,
+                      "rateTreatment" : null,
+                      "calculationParameters" : null,
+                      "fallbackRate" : null,
+                      "initialRate" : null,
+                      "finalRateRounding" : null,
+                      "averagingMethod" : null,
+                      "negativeInterestRateTreatment" : null,
+                      "type" : "cdm.product.asset.FloatingRateSpecification"
+                    },
+                    "inflationRateSpecification" : null,
+                    "type" : "cdm.product.asset.RateSpecification"
+                  },
+                  "dayCountFraction" : {
+                    "value" : "ACT/360"
+                  },
+                  "calculationPeriodDates" : {
+                    "effectiveDate" : {
+                      "adjustableDate" : {
+                        "unadjustedDate" : "2025-04-17",
+                        "dateAdjustments" : {
+                          "businessDayConvention" : "NONE"
+                        }
+                      }
+                    },
+                    "terminationDate" : {
+                      "adjustableDate" : {
+                        "unadjustedDate" : "2026-01-22",
+                        "dateAdjustments" : {
+                          "businessDayConvention" : "MODFOLLOWING"
+                        }
+                      }
+                    }
+                  }
+                }
+              } ]
+            }
+          },
+          "tradeLot" : [ { } ],
+          "counterparty" : [ {
+            "role" : "Party1"
+          }, {
+            "role" : "Party2"
+          } ]
+        },
+        "tradeIdentifier" : [ {
+          "assignedIdentifier" : [ {
+            "identifier" : {
+              "value" : "VM.90208489.5593923954"
+            }
+          } ]
+        } ],
+        "tradeDate" : {
+          "value" : "2025-04-17"
+        },
+        "party" : [ {
+          "partyId" : [ {
+            "identifier" : {
+              "value" : "B4TYDEB6GKMZO031MB27"
+            }
+          } ],
+          "name" : {
+            "value" : "Bank Of America, National Association - Australian Branch"
+          }
+        }, {
+          "partyId" : [ {
+            "identifier" : {
+              "value" : "F8SB4JFBSYQFRQEH3Z21"
+            }
+          } ],
+          "name" : {
+            "value" : "National Australia Bank Limited"
+          }
+        } ]
+      },
+      "state" : {
+        "positionState" : "Formed"
+      }
+    } ]
+  }
+}
